@@ -1,6 +1,3 @@
-import java.time.temporal.ValueRange;
-import java.util.SortedMap;
-
 public class Homework_1 {
     public static void main(String[] args) {
         printThreeWords();
