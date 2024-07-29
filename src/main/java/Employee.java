@@ -1,10 +1,10 @@
 public class Employee {
-    String fio;
-    String position;
-    String email;
-    String phone;
-    int salary;
-    int age;
+    private String fio;
+    private String position;
+    private String email;
+    private String phone;
+    private int salary;
+    private int age;
 
     public Employee() {
         this.fio = "Tarnyavskaya Valeria Andreevna";
@@ -33,13 +33,7 @@ public class Employee {
     }
 
     public static void main(String[] args) {
-        Employee employee = new Employee();
-    Employee [] person = new Employee[5];
-    person [0] = new Employee("Ivanov Ivan", "Engineer", "ivivan@mailbox.com", "892312312", 30000, 30);
-    person [1] = new Employee("Ivanov Sasha", "Engineer", "ivivan@mailbox.com", "892312312", 30000, 30);
-    person [2] = new Employee("Ivanov Kolya", "Engineer", "ivivan@mailbox.com", "892312312", 30000, 30);
-    person [3] = new Employee("Ivanov Misha", "Engineer", "ivivan@mailbox.com", "892312312", 30000, 30);
-    person [4] = new Employee("Ivanov Sergey", "Engineer", "ivivan@mailbox.com", "892312312", 30000, 30);
+
     }
 
     public Employee(String fio, String position, String email, String phone, int salary, int age) {
@@ -49,5 +43,52 @@ public class Employee {
         this.phone = phone;
         this.salary = salary;
         this.age = age;
+    }
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getFio() {
+        return fio;
+    }
+
+    public void setFio(String fio) {
+        this.fio = fio;
     }
 }
